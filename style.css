@@ -1,0 +1,458 @@
+body {
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.bgimage {
+    position: relative;
+    width: 100%;
+    height: 50%;
+
+}
+
+.overlay-box {
+    position: absolute;
+    top: 65%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the box to be centered on the specified top and left */
+    width: 35%; /* Adjust the size as needed */
+    height: 50%; /* Adjust height based on content */
+    padding: 20px;
+    background-color: white; /* Background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay-box h1, .overlay-box p {
+    margin-bottom: 10px; /* Adds a bit of space below the paragraph */
+    color: black;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.start-now-btn {
+    padding: 10px 20px;
+    font:  200px; ; /* Adjust font size as needed */
+    color: white; /* Text color */
+    background-color: #007bff; /* Blue background */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 10px; /* Ensures space between the paragraph and the button */
+}
+
+.start-now-btn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.block {
+    padding: 20px;
+    margin: 20px 0;
+    position: relative; /* To position the pseudo-elements */
+}
+
+.left, .right {
+
+    max-width: 50%; /* Limits the width of the block for shorter lines */
+    margin: auto; /* Helps in centering the block when text lines are shorter */
+}
+
+.left {
+    text-align: left;
+    border-left: 4px solid #007bff;
+    padding-left: 20px;
+}
+
+.right {
+    text-align: right;
+    border-right: 4px solid #007bff;
+    padding-right: 20px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; /* Consistent spacing between columns */
+    width: 90%;
+}
+
+.job-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the start of the column */
+    gap: 20px; /* Consistent spacing between job cards */
+    width: 100%;
+     /* Ensures each column takes half of the main container's width */
+}
+.jobbutton{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 90%;
+    background-color: #007bff;
+    color:white;
+}
+.job {
+    width: auto; /* Full width to fill the column */
+    padding: 15px;
+    margin: 0; /* Remove any margin to maintain uniformity */
+    box-shadow: 0 2px 5px rgba(204, 169, 169, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Distributes space between elements inside the card */
+    height: 100%; /* Ensures all cards have the same height */
+    background-color:#EDEBEB;
+}
+
+.job img {
+    width: 50%;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+}
+
+.job:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.outerabtus h1{
+    text-align: center;
+}
+.abtus {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 500px; /* Specific width of the .abtus div */
+     /* Provides some spacing around the .abtus div */
+     text-align: center;
+     font-size: 25px;
+     margin-bottom: -55px;
+     margin-top: -85px;
+     background-color: #EDEBEB;
+
+}
+
+
+.LMBUTTON{
+    margin-left: 40%;
+    width: 100PX;
+    height: 50PX;
+    margin-bottom: 20px;
+    font-style: ARIAL;
+    background-color: #007bff;
+    color: white;
+
+}
+.connect-text {
+    font-size: 16px; /* Set the size of the text */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 116px;
+}
+
+.footer-column h3, .footer-column h4, .footer-column p, .footer-column input, .footer-column textarea, .footer-column button {
+    margin-bottom: 10px;
+}
+
+.icon {
+    display: inline-block;
+    /* Add styles for your SVG icon here */
+    margin-top: 150px;
+    color: white;
+    margin-left: 50px;
+}
+
+.footer-column input, .footer-column textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+    padding: 5px;
+}
+
+.footer-column textarea {
+    height: 60px;
+}
+
+.footer-column button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 25px;
+    
+
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 45px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+    
+}
+
+.input-group:last-child {
+    margin-right: 0;
+}
+
+.input-group label {
+    margin-bottom: 45px;
+    color: white;
+    font-size: 25px;
+    
+
+}
+
+.form-row input {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    color: white;
+    outline: none; /* Removes focus outline */
+    margin-bottom: 45px;
+}
+
+.message-row {
+    display: flex;
+    flex-direction: column; /* Aligns the label above the textarea */
+    margin-bottom: 45px;
+}
+
+.message-row textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: white;
+    padding: 8px;
+}
+
+.footer-column button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.connecttext{
+display:flex;
+margin-right: 140px;
+margin-top: 140px;
+font-size: 30px;
+color: white;
+fill:  white;
+
+    
+}
+.chat-launch-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* High z-index to ensure it appears above most other elements */
+}
+
+.site-chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    display: none; /* Initially hidden */
+    z-index: 1000; /* High z-index to ensure it appears above most other elements */
+}
+
+.chat-messages {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+  
+
+
+/* You might need to add more styles to match the exact look from the screenshot */
+/* Base styles are above, these are responsive adjustments for different screen sizes */
+
+/* Small Devices, Phones */
+/* Small Devices, Phones */
+@media only screen and (max-width: 768px) {
+    .container, .abtus {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .nav-links li {
+        padding: 0 10px;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .job {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .bgimage, .overlay-box {
+        height: auto;
+    }
+
+    .overlay-box {
+        width: 90%;
+        top: 70%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+    /* Consider increasing button and link sizes for better touch interaction */
+}
+
+/* Medium Devices, Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container, .abtus {
+        width: 80%;
+    }
+
+    .nav-links li {
+        padding: 0 12px;
+    }
+
+    .search-bar input {
+        width: 250px;
+    }
+
+    .job {
+        width: calc(50% - 20px); /* Two items per row */
+    }
+
+    .overlay-box {
+        width: 60%;
+    }
+    /* Adjust padding and margins to ensure that elements do not touch the edges of the screen */
+}
+
+/* Large Devices, Desktops */
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .job {
+        width: calc(33% - 20px); /* Three items per row */
+    }
+
+    .overlay-box {
+        width: 35%;
+    }
+    /* Ensure the overall layout does not feel too sparse or too crowded */
+}
